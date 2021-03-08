@@ -4,47 +4,60 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
     <style>
       * {
         margin: 0;
         padding: 0;
-        
+        box-sizing: border-box;
       }
-      div {
-        background-color: blue;
-        display: flex;
+      div.card {
+        width: 222px;
+        height: 444px;
+        background-color: #787878;
       }
-      div {
-            float: left;
-            padding: 3vh 3vh;
-            margin: 10vh 0px 0px 10px;
-        }
-        div.card{
-            width: 20vh;
-            border: 10px solid red;
-            flex-direction: column;
-           justify-content: space-between;
-           align-items: center;
-            
-        }
-        div > #botão{
-            padding: 10px;
-            margin-top: 10px;
-            border-radius: 3px;
-        }
+      div > img {
 
-      
+        height:  28vh;
+        object-fit: contain;
+      }
+  div > h3 {
+    margin: 50px 0px 0px 59px;
+  }
+  div > div.price {
+    margin: 20px 0px 0px 10px;
+  }
+  div > button {
+    margin: 50px 0px 0px 80px;
+    padding: 10px 5px;
+    background-color: #c4cf81;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+    border-radius: 5px;
+  }
+  div > button:hover {
+    background: rgba(0,0,0,.1);
+    background: linear-gradient(0deg, rgba(0,3,255,1) 0%, rgba(2,126,251,1) 100%);
+  }
     </style>
+
+    <title>Document</title>
   </head>
   <body>
     <div class="card">
-      <title>celular</title>
       <div class="img">
-        <img src="" alt="" />
+        <img
+          src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSEpmkJfQZXs9x-WFpVYNJsttLxPoeCewo63UpLNrJwLqWFrHhh0ykhbOGtZCF52km_sg2fGqzioe9ediWdKbbjTKKQdBjiNg_uw_62iZsL3ZJDhj61A4UG&usqp=CAE"
+          alt=""
+        />
       </div>
-      <span>descrição</span>
-      <button id="botão">Comprar</button>
+      <h3>Celular</h3>
+      <div class="price">
+        <h1>R$:12,00</h1>
+      </div>
+      <button>comprar</button>
     </div>
   </body>
 </html>
