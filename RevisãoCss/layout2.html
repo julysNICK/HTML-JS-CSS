@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .main {
+        display: flex;
+        flex-direction: column;
+      }
+      .header {
+          height: 3.5rem;
+        background-color: cadetblue;
+      }
+      .conatinercontent {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+      }
+      .footer {
+          margin-top: 7px;
+          height: 58px;
+        background-color: chartreuse;
+      }
+      .anucio {
+        flex-grow: 0;
+        flex-shrink: 0;
+        height: 80vh;
+        flex-basis: 250px;
+        background-color: cornflowerblue;
+        padding: 100px;
+      }
+      .content {
+        flex-grow: 3;
+        flex-shrink: 0;
+        height: 80vh;
+        align-self: center;
+        margin-left: 10px;
+        padding: 100px;
+        background-color: darkgoldenrod;
+      }
+      
+      @media (max-width: 700px) {
+        .main{
+            display: flex;
+            flex-direction: column;
+        }
+        .anucio{
+            display: none;
+        }
+        .content {
+        flex-grow: 3;
+        flex-shrink: 0;
+        height: 80vh;
+        align-self: center;
+        margin-left: 0px;
+        padding: 100px;
+        background-color: darkgoldenrod;
+      }
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="header">1</div>
+
+      <div class="conatinercontent">
+        <div class="anucio">2</div>
+
+        <div class="content">3</div>
+      </div>
+
+      <div class="footer">4</div>
+    </div>
+  </body>
+</html>
