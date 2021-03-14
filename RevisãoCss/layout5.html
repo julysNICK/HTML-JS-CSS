@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 2fr 10fr 1fr 6fr 10fr;
+        grid-template-areas: 'navbar navbar navbar navbar'
+                              'video video video  footer'
+                              'video   video video footer'
+                              'title-video  title-video  title-video  footer'
+                              'comentarios-video comentarios-video comentarios-video footer'
+        ;
+        grid-row-gap: 5px;
+      }
+      .conatinercontent {
+        grid-area: video;
+        background-color: coral;
+      }
+      .title-video {
+        background-color: blue;
+        grid-area:title-video ;
+
+      }
+      .header {
+        grid-area: navbar;
+        background-color: chocolate;
+      }
+      .comentarios-video {
+        grid-area: comentarios-video;
+        background-color: brown;
+      }
+      .footer {
+        grid-area: footer;
+        background-color: chartreuse;
+        height: 92.5vh;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="header">1</div>
+
+      <div class="conatinercontent">Video</div>
+      <div class="title-video">title e canal</div>
+
+      <div class="comentarios-video">comentarios</div>
+      <div class="footer">4</div>
+    </div>
+  </body>
+</html>
